@@ -27,7 +27,17 @@ const LoginPage = () => {
     });
 
     console.log(res, error);
+
+      if (error) {
+            alert(error.message)
+        }
+        if (res) {
+            alert("signup successful")
+        }
+    
+    
   }
+  
 
   // console.log('errors', errors);
   // console.log(watch('email'));
